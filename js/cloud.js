@@ -72,7 +72,9 @@
     }
 
     if (this.words && this.words.length) {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
+      ctx.shadowBlur = 5;
+      ctx.fillStyle = 'white';//'rgba(0, 0, 0, 0.0)';
       ctx.font = '50px Varela Round';
       ctx.textAlign = 'center';
       for (var i = 0; i < this.words.length; ++i) {
