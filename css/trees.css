@@ -37,3 +37,9 @@ hr {
     width: 100px; }
   #info .social {
     margin: 5px 0; }
+  #info a {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-decoration: none; }
+    #info a:hover {
+      text-decoration: underline; }
