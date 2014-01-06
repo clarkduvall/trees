@@ -28,6 +28,10 @@
       this.dx = Math.random() * 50;
     else
       this.dx = -Math.random() * 50;
+
+    if (text)
+      this.dx = 40;
+
     this.canvasWidth = canvasWidth;
 
     this.parts = [{x: 0, y: 0, size: this.size}];
