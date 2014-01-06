@@ -6,11 +6,17 @@ function sunset(ctx) {
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 }
 
+function floatToFixed(val) {
+  if (!_.isNumber(val))
+    val = parseFloat(val, 10);
+  return val.toFixed(3);
+}
+
 function rgb(r, g, b, a) {
   if (_.isUndefined(a))
     a = 1;
   return 'rgba(' + Math.floor(r) + ',' + Math.floor(g) + ',' +
-      Math.floor(b) + ',' + a + ')';
+      Math.floor(b) + ',' + floatToFixed(a) + ')';
 }
 
 function darken(r, g, b, a) {
