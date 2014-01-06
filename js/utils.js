@@ -61,5 +61,5 @@ function getCoordsFromEvent(e, canvas) {
   return {
     x: e.clientX - rect.left,
     y: e.clientY - rect.top
-  }
+  };
 }

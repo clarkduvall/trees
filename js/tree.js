@@ -68,7 +68,7 @@
 
   Tree.prototype.trigger = function(eventType, data) {
     this.$this.trigger(eventType, data);
-  }
+  };
 
   Tree.prototype.isInTree = function(x, y) {
     var thisX = this.x - this.maxSize / 2,
